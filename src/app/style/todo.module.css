@@ -1,7 +1,11 @@
 .todo{
     width: 100%;
     /* border: 1px solid salmon; */
-    padding: 1em 2rem;
+    padding: 1em 1rem;
     display: flex;
     justify-content: space-between;
+}
+
+.todo p{
+    color: black;
 }

@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import styles from './page.module.css'
 
@@ -21,6 +22,12 @@ const todos = [
     description:'Thanks shot for Malik',
     completed: false,
     date: 'January 04, 2016'
+  },
+  {
+    id:4,
+    description:'Pick up Maria',
+    completed: false,
+    date: 'January 05, 2016'
   },
 ]
 

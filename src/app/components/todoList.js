@@ -11,7 +11,7 @@ export default function TodoList({todos}) {
 
     return (
         <section className={styles.todolist}>
-            <h2 className={styles.heading}>{heading}</h2>
+            <h3 className={styles.heading}>{heading}</h3>
             {todos.map(todo =>
                 <Todo todo={todo} key={todo.id} />
             )}
