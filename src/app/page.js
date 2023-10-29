@@ -1,6 +1,29 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
+import Today from './components/today'
+
+const todos = [
+  {
+    id:1,
+    description:'Design review',
+    completed: false,
+    date: 'January 04, 2016'
+  },
+  {
+    id:2,
+    description:'Coffee with July',
+    completed: true,
+    date: 'January 04, 2016'
+  },
+  {
+    id:3,
+    description:'Thanks shot for Malik',
+    completed: false,
+    date: 'January 04, 2016'
+  },
+]
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -27,16 +50,11 @@ export default function Home() {
           </a>
         </div>
       </div>
+ 
+      <Today todos={todos} />
 
       <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+        
       </div>
 
       <div className={styles.grid}>
